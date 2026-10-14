@@ -1,0 +1,263 @@
+date,category,counterparty,amount,memo
+2026-04-18,sales,In-store QR and card settlements,2906.0,
+2026-04-19,sales,In-store QR and card settlements,3041.42,
+2026-04-20,sales,In-store QR and card settlements,3041.17,
+2026-04-20,supplier,Nanshan Tea and Dairy Supply,-7564.85,Weekly ingredients
+2026-04-20,utilities,Shenzhen Power and Water,-4059.47,Electricity and water
+2026-04-21,sales,In-store QR and card settlements,2126.98,
+2026-04-21,sales,Delivery platform weekly settlement,9767.22,Net of platform commission
+2026-04-22,sales,In-store QR and card settlements,2015.04,
+2026-04-23,sales,In-store QR and card settlements,1942.53,
+2026-04-24,sales,In-store QR and card settlements,2657.0,
+2026-04-25,sales,In-store QR and card settlements,2394.92,
+2026-04-26,sales,In-store QR and card settlements,2876.0,
+2026-04-27,sales,In-store QR and card settlements,2993.44,
+2026-04-27,supplier,Nanshan Tea and Dairy Supply,-7711.4,Weekly ingredients
+2026-04-28,sales,In-store QR and card settlements,2238.44,
+2026-04-28,sales,Delivery platform weekly settlement,9296.57,Net of platform commission
+2026-04-29,sales,In-store QR and card settlements,2232.71,
+2026-04-30,sales,In-store QR and card settlements,2051.79,
+2026-05-01,rent,Futian Plaza Property Management,-38000.0,Monthly rent
+2026-05-01,sales,In-store QR and card settlements,2196.97,
+2026-05-02,sales,In-store QR and card settlements,3218.77,
+2026-05-03,sales,In-store QR and card settlements,3512.44,
+2026-05-04,sales,In-store QR and card settlements,4415.11,
+2026-05-04,supplier,Nanshan Tea and Dairy Supply,-8859.04,Weekly ingredients
+2026-05-05,packaging,Bao'an Packaging Co,-6130.34,"Cups, lids and straws"
+2026-05-05,sales,In-store QR and card settlements,2236.79,
+2026-05-05,sales,Delivery platform weekly settlement,10860.21,Net of platform commission
+2026-05-06,sales,In-store QR and card settlements,1850.81,
+2026-05-07,sales,In-store QR and card settlements,2100.59,
+2026-05-08,sales,In-store QR and card settlements,2188.15,
+2026-05-09,sales,In-store QR and card settlements,2540.64,
+2026-05-10,payroll,Payroll,-42000.0,"Staff wages, monthly"
+2026-05-10,sales,In-store QR and card settlements,3876.47,
+2026-05-11,sales,In-store QR and card settlements,3400.27,
+2026-05-11,supplier,Nanshan Tea and Dairy Supply,-7766.07,Weekly ingredients
+2026-05-12,sales,In-store QR and card settlements,2283.67,
+2026-05-12,sales,Delivery platform weekly settlement,9945.9,Net of platform commission
+2026-05-13,sales,In-store QR and card settlements,2358.01,
+2026-05-14,sales,In-store QR and card settlements,2210.65,
+2026-05-15,payroll,Social insurance and housing fund,-9800.0,Employer contributions
+2026-05-15,sales,In-store QR and card settlements,2436.71,
+2026-05-16,sales,In-store QR and card settlements,2793.32,
+2026-05-17,sales,In-store QR and card settlements,3490.46,
+2026-05-18,sales,In-store QR and card settlements,3711.16,
+2026-05-18,supplier,Nanshan Tea and Dairy Supply,-8662.24,Weekly ingredients
+2026-05-19,sales,In-store QR and card settlements,2590.11,
+2026-05-19,sales,Delivery platform weekly settlement,10541.9,Net of platform commission
+2026-05-20,sales,In-store QR and card settlements,1927.43,
+2026-05-20,utilities,Shenzhen Power and Water,-4306.67,Electricity and water
+2026-05-21,sales,In-store QR and card settlements,2117.73,
+2026-05-22,sales,In-store QR and card settlements,2648.1,
+2026-05-23,sales,In-store QR and card settlements,2680.03,
+2026-05-24,sales,In-store QR and card settlements,3974.88,
+2026-05-25,sales,In-store QR and card settlements,3969.71,
+2026-05-25,supplier,Nanshan Tea and Dairy Supply,-9425.22,Weekly ingredients
+2026-05-26,sales,In-store QR and card settlements,2028.88,
+2026-05-26,sales,Delivery platform weekly settlement,10883.04,Net of platform commission
+2026-05-27,sales,In-store QR and card settlements,2132.11,
+2026-05-28,sales,In-store QR and card settlements,2070.92,
+2026-05-29,sales,In-store QR and card settlements,2621.8,
+2026-05-30,sales,In-store QR and card settlements,2946.53,
+2026-05-31,sales,In-store QR and card settlements,4042.92,
+2026-06-01,rent,Futian Plaza Property Management,-38000.0,Monthly rent
+2026-06-01,sales,In-store QR and card settlements,3768.91,
+2026-06-01,supplier,Nanshan Tea and Dairy Supply,-9196.63,Weekly ingredients
+2026-06-02,sales,In-store QR and card settlements,2519.05,
+2026-06-02,sales,Delivery platform weekly settlement,10721.27,Net of platform commission
+2026-06-03,sales,In-store QR and card settlements,2207.73,
+2026-06-04,sales,In-store QR and card settlements,2420.72,
+2026-06-05,packaging,Bao'an Packaging Co,-6054.19,"Cups, lids and straws"
+2026-06-05,sales,In-store QR and card settlements,2992.37,
+2026-06-06,sales,In-store QR and card settlements,3032.17,
+2026-06-07,sales,In-store QR and card settlements,3867.18,
+2026-06-08,sales,In-store QR and card settlements,4085.95,
+2026-06-08,supplier,Nanshan Tea and Dairy Supply,-8997.17,Weekly ingredients
+2026-06-09,sales,In-store QR and card settlements,2678.44,
+2026-06-09,sales,Delivery platform weekly settlement,11548.42,Net of platform commission
+2026-06-10,payroll,Payroll,-42000.0,"Staff wages, monthly"
+2026-06-10,sales,In-store QR and card settlements,2662.9,
+2026-06-11,sales,In-store QR and card settlements,2477.45,
+2026-06-12,sales,In-store QR and card settlements,2592.77,
+2026-06-13,sales,In-store QR and card settlements,3174.27,
+2026-06-14,sales,In-store QR and card settlements,4265.33,
+2026-06-15,payroll,Social insurance and housing fund,-9800.0,Employer contributions
+2026-06-15,sales,In-store QR and card settlements,3665.03,
+2026-06-15,supplier,Nanshan Tea and Dairy Supply,-9473.07,Weekly ingredients
+2026-06-16,sales,In-store QR and card settlements,2372.86,
+2026-06-16,sales,Delivery platform weekly settlement,11762.19,Net of platform commission
+2026-06-17,sales,In-store QR and card settlements,2830.41,
+2026-06-18,sales,In-store QR and card settlements,2715.9,
+2026-06-19,sales,In-store QR and card settlements,2372.51,
+2026-06-20,sales,In-store QR and card settlements,3275.64,
+2026-06-20,utilities,Shenzhen Power and Water,-4502.91,Electricity and water
+2026-06-21,sales,In-store QR and card settlements,4720.17,
+2026-06-22,sales,In-store QR and card settlements,3968.02,
+2026-06-22,supplier,Nanshan Tea and Dairy Supply,-9578.67,Weekly ingredients
+2026-06-23,sales,In-store QR and card settlements,2155.58,
+2026-06-23,sales,Delivery platform weekly settlement,12166.34,Net of platform commission
+2026-06-24,sales,In-store QR and card settlements,2910.76,
+2026-06-25,sales,In-store QR and card settlements,2158.28,
+2026-06-26,sales,In-store QR and card settlements,2671.21,
+2026-06-27,sales,In-store QR and card settlements,3072.64,
+2026-06-28,sales,In-store QR and card settlements,4293.7,
+2026-06-29,sales,In-store QR and card settlements,3639.97,
+2026-06-29,supplier,Nanshan Tea and Dairy Supply,-9178.8,Weekly ingredients
+2026-06-30,sales,In-store QR and card settlements,2541.58,
+2026-06-30,sales,Delivery platform weekly settlement,11426.5,Net of platform commission
+2026-07-01,rent,Futian Plaza Property Management,-38000.0,Monthly rent
+2026-07-01,sales,In-store QR and card settlements,2416.83,
+2026-07-02,sales,In-store QR and card settlements,2843.0,
+2026-07-03,sales,In-store QR and card settlements,2513.09,
+2026-07-04,sales,In-store QR and card settlements,2579.75,
+2026-07-05,packaging,Bao'an Packaging Co,-6295.1,"Cups, lids and straws"
+2026-07-05,sales,In-store QR and card settlements,3617.7,
+2026-07-06,sales,In-store QR and card settlements,4202.26,
+2026-07-06,supplier,Nanshan Tea and Dairy Supply,-9180.72,Weekly ingredients
+2026-07-07,sales,In-store QR and card settlements,3371.47,
+2026-07-07,sales,Delivery platform weekly settlement,11323.77,Net of platform commission
+2026-07-08,sales,In-store QR and card settlements,2752.59,
+2026-07-09,sales,In-store QR and card settlements,2747.31,
+2026-07-10,payroll,Payroll,-42000.0,"Staff wages, monthly"
+2026-07-10,sales,In-store QR and card settlements,1313.53,
+2026-07-11,sales,In-store QR and card settlements,3135.37,
+2026-07-12,sales,In-store QR and card settlements,5197.1,
+2026-07-13,sales,In-store QR and card settlements,3861.87,
+2026-07-13,supplier,Nanshan Tea and Dairy Supply,-10321.29,Weekly ingredients
+2026-07-14,sales,In-store QR and card settlements,2703.32,
+2026-07-14,sales,Delivery platform weekly settlement,12233.99,Net of platform commission
+2026-07-15,payroll,Social insurance and housing fund,-9800.0,Employer contributions
+2026-07-15,sales,In-store QR and card settlements,2764.94,
+2026-07-15,tax,Tax Bureau,-10400.0,"Quarterly VAT, surcharges and income tax prepayment"
+2026-07-16,sales,In-store QR and card settlements,3025.45,
+2026-07-17,sales,In-store QR and card settlements,2867.93,
+2026-07-18,sales,In-store QR and card settlements,3394.72,
+2026-07-19,sales,In-store QR and card settlements,4941.63,
+2026-07-20,sales,In-store QR and card settlements,4078.55,
+2026-07-20,supplier,Nanshan Tea and Dairy Supply,-10435.88,Weekly ingredients
+2026-07-20,utilities,Shenzhen Power and Water,-4498.13,Electricity and water
+2026-07-21,sales,In-store QR and card settlements,2802.24,
+2026-07-21,sales,Delivery platform weekly settlement,12997.84,Net of platform commission
+2026-07-22,sales,In-store QR and card settlements,2567.3,
+2026-07-23,sales,In-store QR and card settlements,2544.15,
+2026-07-24,sales,In-store QR and card settlements,3092.2,
+2026-07-25,sales,In-store QR and card settlements,3217.91,
+2026-07-26,sales,In-store QR and card settlements,4148.0,
+2026-07-27,sales,In-store QR and card settlements,4045.17,
+2026-07-27,supplier,Nanshan Tea and Dairy Supply,-9707.34,Weekly ingredients
+2026-07-28,sales,In-store QR and card settlements,2606.54,
+2026-07-28,sales,Delivery platform weekly settlement,12254.61,Net of platform commission
+2026-07-29,sales,In-store QR and card settlements,2723.58,
+2026-07-30,sales,In-store QR and card settlements,3010.25,
+2026-07-31,sales,In-store QR and card settlements,2705.57,
+2026-08-01,rent,Futian Plaza Property Management,-38000.0,Monthly rent
+2026-08-01,sales,In-store QR and card settlements,3504.88,
+2026-08-02,sales,In-store QR and card settlements,4007.08,
+2026-08-03,sales,In-store QR and card settlements,4291.78,
+2026-08-03,supplier,Nanshan Tea and Dairy Supply,-9812.7,Weekly ingredients
+2026-08-04,sales,In-store QR and card settlements,2529.84,
+2026-08-04,sales,Delivery platform weekly settlement,12491.16,Net of platform commission
+2026-08-05,packaging,Bao'an Packaging Co,-6324.33,"Cups, lids and straws"
+2026-08-05,sales,In-store QR and card settlements,2623.97,
+2026-08-06,sales,In-store QR and card settlements,2568.59,
+2026-08-07,sales,In-store QR and card settlements,2320.69,
+2026-08-08,sales,In-store QR and card settlements,3582.37,
+2026-08-09,sales,In-store QR and card settlements,4569.25,
+2026-08-10,payroll,Payroll,-42000.0,"Staff wages, monthly"
+2026-08-10,sales,In-store QR and card settlements,3755.56,
+2026-08-10,supplier,Nanshan Tea and Dairy Supply,-9869.31,Weekly ingredients
+2026-08-11,sales,In-store QR and card settlements,2824.32,
+2026-08-11,sales,Delivery platform weekly settlement,11999.48,Net of platform commission
+2026-08-12,sales,In-store QR and card settlements,2643.29,
+2026-08-13,sales,In-store QR and card settlements,1141.47,
+2026-08-14,sales,In-store QR and card settlements,2885.17,
+2026-08-15,payroll,Social insurance and housing fund,-9800.0,Employer contributions
+2026-08-15,sales,In-store QR and card settlements,3181.35,
+2026-08-16,sales,In-store QR and card settlements,4437.46,
+2026-08-17,sales,In-store QR and card settlements,3331.92,
+2026-08-17,supplier,Nanshan Tea and Dairy Supply,-9586.59,Weekly ingredients
+2026-08-18,sales,In-store QR and card settlements,2898.18,
+2026-08-18,sales,Delivery platform weekly settlement,11176.59,Net of platform commission
+2026-08-19,sales,In-store QR and card settlements,2600.53,
+2026-08-20,sales,In-store QR and card settlements,3332.08,
+2026-08-20,utilities,Shenzhen Power and Water,-4196.51,Electricity and water
+2026-08-21,sales,In-store QR and card settlements,2748.75,
+2026-08-22,sales,In-store QR and card settlements,3576.71,
+2026-08-23,sales,In-store QR and card settlements,4692.01,
+2026-08-24,sales,In-store QR and card settlements,4129.63,
+2026-08-24,supplier,Nanshan Tea and Dairy Supply,-10457.85,Weekly ingredients
+2026-08-25,sales,In-store QR and card settlements,3189.34,
+2026-08-25,sales,Delivery platform weekly settlement,13107.91,Net of platform commission
+2026-08-26,sales,In-store QR and card settlements,979.0,
+2026-08-27,sales,In-store QR and card settlements,2523.62,
+2026-08-28,sales,In-store QR and card settlements,2841.73,
+2026-08-29,sales,In-store QR and card settlements,3063.8,
+2026-08-30,sales,In-store QR and card settlements,4535.17,
+2026-08-31,sales,In-store QR and card settlements,3628.76,
+2026-08-31,supplier,Nanshan Tea and Dairy Supply,-8883.44,Weekly ingredients
+2026-09-01,rent,Futian Plaza Property Management,-38000.0,Monthly rent
+2026-09-01,sales,In-store QR and card settlements,2293.01,
+2026-09-01,sales,Delivery platform weekly settlement,11349.57,Net of platform commission
+2026-09-02,sales,In-store QR and card settlements,2120.41,
+2026-09-03,sales,In-store QR and card settlements,2310.26,
+2026-09-04,sales,In-store QR and card settlements,2595.17,
+2026-09-05,packaging,Bao'an Packaging Co,-6271.04,"Cups, lids and straws"
+2026-09-05,sales,In-store QR and card settlements,2980.73,
+2026-09-06,sales,In-store QR and card settlements,4027.11,
+2026-09-07,sales,In-store QR and card settlements,3950.46,
+2026-09-07,supplier,Nanshan Tea and Dairy Supply,-8832.78,Weekly ingredients
+2026-09-08,sales,In-store QR and card settlements,1832.24,
+2026-09-08,sales,Delivery platform weekly settlement,11084.84,Net of platform commission
+2026-09-09,sales,In-store QR and card settlements,2408.95,
+2026-09-10,payroll,Payroll,-42000.0,"Staff wages, monthly"
+2026-09-10,sales,In-store QR and card settlements,1971.74,
+2026-09-11,sales,In-store QR and card settlements,2202.04,
+2026-09-12,sales,In-store QR and card settlements,2594.1,
+2026-09-13,sales,In-store QR and card settlements,3363.95,
+2026-09-14,sales,In-store QR and card settlements,3762.3,
+2026-09-14,supplier,Nanshan Tea and Dairy Supply,-7764.88,Weekly ingredients
+2026-09-15,payroll,Social insurance and housing fund,-9800.0,Employer contributions
+2026-09-15,sales,In-store QR and card settlements,2125.39,
+2026-09-15,sales,Delivery platform weekly settlement,9913.97,Net of platform commission
+2026-09-16,sales,In-store QR and card settlements,2006.35,
+2026-09-17,sales,In-store QR and card settlements,1977.53,
+2026-09-18,sales,In-store QR and card settlements,1961.92,
+2026-09-19,sales,In-store QR and card settlements,2968.39,
+2026-09-20,sales,In-store QR and card settlements,3931.4,
+2026-09-20,utilities,Shenzhen Power and Water,-4044.28,Electricity and water
+2026-09-21,sales,In-store QR and card settlements,5059.97,
+2026-09-21,supplier,Nanshan Tea and Dairy Supply,-9232.11,Weekly ingredients
+2026-09-22,sales,In-store QR and card settlements,2197.9,
+2026-09-22,sales,Delivery platform weekly settlement,10950.25,Net of platform commission
+2026-09-23,sales,In-store QR and card settlements,2385.96,
+2026-09-24,sales,In-store QR and card settlements,3012.83,
+2026-09-25,sales,In-store QR and card settlements,2544.13,
+2026-09-26,sales,In-store QR and card settlements,3225.81,
+2026-09-27,sales,In-store QR and card settlements,4035.93,
+2026-09-28,sales,In-store QR and card settlements,3560.12,
+2026-09-28,supplier,Nanshan Tea and Dairy Supply,-8896.24,Weekly ingredients
+2026-09-29,sales,In-store QR and card settlements,2528.23,
+2026-09-29,sales,Delivery platform weekly settlement,11459.6,Net of platform commission
+2026-09-30,sales,In-store QR and card settlements,2164.99,
+2026-10-01,rent,Futian Plaza Property Management,-38000.0,Monthly rent
+2026-10-01,sales,In-store QR and card settlements,2605.09,
+2026-10-02,sales,In-store QR and card settlements,2845.88,
+2026-10-03,sales,In-store QR and card settlements,3520.57,
+2026-10-04,sales,In-store QR and card settlements,5053.51,
+2026-10-05,packaging,Bao'an Packaging Co,-6329.36,"Cups, lids and straws"
+2026-10-05,sales,In-store QR and card settlements,3496.78,
+2026-10-05,supplier,Nanshan Tea and Dairy Supply,-9962.46,Weekly ingredients
+2026-10-06,sales,In-store QR and card settlements,1221.49,
+2026-10-06,sales,Delivery platform weekly settlement,12144.22,Net of platform commission
+2026-10-07,sales,In-store QR and card settlements,2635.29,
+2026-10-08,sales,In-store QR and card settlements,1119.9,
+2026-10-09,sales,In-store QR and card settlements,2007.65,
+2026-10-10,payroll,Payroll,-42000.0,"Staff wages, monthly"
+2026-10-10,sales,In-store QR and card settlements,2374.42,
+2026-10-11,sales,In-store QR and card settlements,3930.68,
+2026-10-12,sales,In-store QR and card settlements,1668.4,
+2026-10-12,supplier,Nanshan Tea and Dairy Supply,-6639.52,Weekly ingredients
+2026-10-13,sales,In-store QR and card settlements,2153.07,
+2026-10-13,sales,Delivery platform weekly settlement,8176.94,Net of platform commission
+2026-10-14,sales,In-store QR and card settlements,2142.09,

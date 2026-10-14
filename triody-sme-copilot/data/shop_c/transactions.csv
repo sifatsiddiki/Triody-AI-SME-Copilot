@@ -1,0 +1,213 @@
+date,category,counterparty,amount,memo
+2026-04-18,sales,Card settlements and cash,388.12,
+2026-04-19,sales,Card settlements and cash,264.95,
+2026-04-21,sales,Card settlements and cash,262.19,
+2026-04-22,sales,Card settlements and cash,301.97,
+2026-04-22,supplier,Pentland Flower Wholesale,-597.11,Weekly flowers
+2026-04-23,payroll,Payroll,-1900.0,Staff wages
+2026-04-23,sales,Card settlements and cash,261.58,
+2026-04-24,sales,Card settlements and cash,398.87,
+2026-04-25,sales,Card settlements and cash,451.48,
+2026-04-26,sales,Card settlements and cash,258.45,
+2026-04-28,sales,Card settlements and cash,245.23,
+2026-04-29,sales,Card settlements and cash,256.67,
+2026-04-29,supplier,Pentland Flower Wholesale,-680.79,Weekly flowers
+2026-04-30,sales,Card settlements and cash,284.86,
+2026-05-01,rent,Bruntsfield Lettings,-1450.0,Monthly rent
+2026-05-01,sales,Card settlements and cash,434.18,
+2026-05-02,sales,Card settlements and cash,489.29,
+2026-05-03,sales,Card settlements and cash,230.64,
+2026-05-05,sales,Card settlements and cash,319.42,
+2026-05-06,sales,Card settlements and cash,406.89,
+2026-05-06,supplier,Pentland Flower Wholesale,-714.48,Weekly flowers
+2026-05-07,payroll,Payroll,-1900.0,Staff wages
+2026-05-07,sales,Card settlements and cash,281.98,
+2026-05-07,tax,HMRC VAT,-1900.0,Quarterly VAT
+2026-05-08,sales,Card settlements and cash,448.68,
+2026-05-09,sales,Card settlements and cash,499.09,
+2026-05-10,sales,Card settlements and cash,230.02,
+2026-05-12,sales,Card settlements and cash,345.66,
+2026-05-12,utilities,Edinburgh Energy Co,-170.54,Electricity
+2026-05-13,sales,Card settlements and cash,324.76,
+2026-05-13,supplier,Pentland Flower Wholesale,-719.25,Weekly flowers
+2026-05-14,sales,Card settlements and cash,299.59,
+2026-05-15,loan,Van lease,-280.0,Van lease
+2026-05-15,sales,Card settlements and cash,374.45,
+2026-05-16,sales,Card settlements and cash,531.9,
+2026-05-17,sales,Card settlements and cash,218.92,
+2026-05-19,sales,Card settlements and cash,230.86,
+2026-05-20,sales,Card settlements and cash,317.28,
+2026-05-20,supplier,Pentland Flower Wholesale,-681.55,Weekly flowers
+2026-05-21,payroll,Payroll,-1900.0,Staff wages
+2026-05-21,sales,Card settlements and cash,355.18,
+2026-05-22,sales,Card settlements and cash,1083.0,
+2026-05-23,sales,Card settlements and cash,519.5,
+2026-05-24,sales,Card settlements and cash,249.65,
+2026-05-26,sales,Card settlements and cash,305.19,
+2026-05-27,sales,Card settlements and cash,302.86,
+2026-05-27,supplier,Pentland Flower Wholesale,-932.59,Weekly flowers
+2026-05-28,sales,Card settlements and cash,299.77,
+2026-05-29,sales,Card settlements and cash,470.12,
+2026-05-30,sales,Card settlements and cash,492.88,
+2026-05-31,sales,Card settlements and cash,220.99,
+2026-06-01,rent,Bruntsfield Lettings,-1450.0,Monthly rent
+2026-06-02,sales,Card settlements and cash,294.97,
+2026-06-03,sales,Card settlements and cash,301.74,
+2026-06-03,supplier,Pentland Flower Wholesale,-638.48,Weekly flowers
+2026-06-04,payroll,Payroll,-1900.0,Staff wages
+2026-06-04,sales,Card settlements and cash,347.82,
+2026-06-05,sales,Card settlements and cash,576.14,
+2026-06-06,sales,Card settlements and cash,643.2,
+2026-06-07,sales,Card settlements and cash,239.34,
+2026-06-09,sales,Card settlements and cash,280.34,
+2026-06-10,sales,Card settlements and cash,339.95,
+2026-06-10,supplier,Pentland Flower Wholesale,-767.01,Weekly flowers
+2026-06-11,sales,Card settlements and cash,323.27,
+2026-06-12,sales,Card settlements and cash,543.18,
+2026-06-12,utilities,Edinburgh Energy Co,-155.94,Electricity
+2026-06-13,sales,Card settlements and cash,688.85,
+2026-06-14,sales,Card settlements and cash,252.46,
+2026-06-15,loan,Van lease,-280.0,Van lease
+2026-06-16,sales,Card settlements and cash,317.46,
+2026-06-17,sales,Card settlements and cash,340.84,
+2026-06-17,supplier,Pentland Flower Wholesale,-848.68,Weekly flowers
+2026-06-18,payroll,Payroll,-1900.0,Staff wages
+2026-06-18,sales,Card settlements and cash,335.29,
+2026-06-19,sales,Card settlements and cash,497.9,
+2026-06-20,sales,Card settlements and cash,640.8,
+2026-06-21,sales,Card settlements and cash,308.8,
+2026-06-23,sales,Card settlements and cash,290.96,
+2026-06-24,sales,Card settlements and cash,354.0,
+2026-06-24,supplier,Pentland Flower Wholesale,-751.03,Weekly flowers
+2026-06-25,sales,Card settlements and cash,360.26,
+2026-06-26,sales,Card settlements and cash,546.24,
+2026-06-27,sales,Card settlements and cash,615.68,
+2026-06-28,sales,Card settlements and cash,236.24,
+2026-06-30,sales,Card settlements and cash,383.94,
+2026-07-01,rent,Bruntsfield Lettings,-1450.0,Monthly rent
+2026-07-01,sales,Card settlements and cash,298.36,
+2026-07-01,supplier,Pentland Flower Wholesale,-857.05,Weekly flowers
+2026-07-02,payroll,Payroll,-1900.0,Staff wages
+2026-07-02,sales,Card settlements and cash,324.39,
+2026-07-03,sales,Card settlements and cash,471.73,
+2026-07-04,sales,Card settlements and cash,1729.83,
+2026-07-05,sales,Card settlements and cash,242.39,
+2026-07-07,sales,Card settlements and cash,258.74,
+2026-07-08,sales,Card settlements and cash,312.9,
+2026-07-08,supplier,Pentland Flower Wholesale,-1070.95,Weekly flowers
+2026-07-09,sales,Card settlements and cash,378.0,
+2026-07-10,sales,Card settlements and cash,458.85,
+2026-07-11,sales,Card settlements and cash,625.91,
+2026-07-12,sales,Card settlements and cash,239.49,
+2026-07-12,utilities,Edinburgh Energy Co,-155.19,Electricity
+2026-07-14,sales,Card settlements and cash,274.71,
+2026-07-15,loan,Van lease,-280.0,Van lease
+2026-07-15,sales,Card settlements and cash,276.91,
+2026-07-15,supplier,Pentland Flower Wholesale,-735.42,Weekly flowers
+2026-07-16,payroll,Payroll,-1900.0,Staff wages
+2026-07-16,sales,Card settlements and cash,295.04,
+2026-07-17,sales,Card settlements and cash,521.98,
+2026-07-18,sales,Card settlements and cash,557.71,
+2026-07-19,sales,Card settlements and cash,240.99,
+2026-07-21,sales,Card settlements and cash,265.54,
+2026-07-22,sales,Card settlements and cash,237.47,
+2026-07-22,supplier,Pentland Flower Wholesale,-743.78,Weekly flowers
+2026-07-23,sales,Card settlements and cash,354.3,
+2026-07-24,sales,Card settlements and cash,408.11,
+2026-07-25,sales,Card settlements and cash,438.71,
+2026-07-26,sales,Card settlements and cash,253.33,
+2026-07-28,sales,Card settlements and cash,287.48,
+2026-07-29,sales,Card settlements and cash,313.59,
+2026-07-29,supplier,Pentland Flower Wholesale,-612.23,Weekly flowers
+2026-07-30,payroll,Payroll,-1900.0,Staff wages
+2026-07-30,sales,Card settlements and cash,324.35,
+2026-07-31,sales,Card settlements and cash,444.39,
+2026-08-01,rent,Bruntsfield Lettings,-1450.0,Monthly rent
+2026-08-01,sales,Card settlements and cash,510.81,
+2026-08-02,sales,Card settlements and cash,236.43,
+2026-08-04,sales,Card settlements and cash,228.33,
+2026-08-05,sales,Card settlements and cash,267.33,
+2026-08-05,supplier,Pentland Flower Wholesale,-665.43,Weekly flowers
+2026-08-06,sales,Card settlements and cash,310.88,
+2026-08-07,sales,Card settlements and cash,425.24,
+2026-08-07,tax,HMRC VAT,-2300.0,Quarterly VAT
+2026-08-08,sales,Card settlements and cash,471.92,
+2026-08-09,sales,Card settlements and cash,208.62,
+2026-08-11,sales,Card settlements and cash,166.32,
+2026-08-12,sales,Card settlements and cash,251.19,
+2026-08-12,supplier,Pentland Flower Wholesale,-618.53,Weekly flowers
+2026-08-12,utilities,Edinburgh Energy Co,-155.72,Electricity
+2026-08-13,payroll,Payroll,-1900.0,Staff wages
+2026-08-13,sales,Card settlements and cash,282.65,
+2026-08-14,sales,Card settlements and cash,372.76,
+2026-08-15,loan,Van lease,-280.0,Van lease
+2026-08-15,sales,Card settlements and cash,522.27,
+2026-08-16,sales,Card settlements and cash,225.09,
+2026-08-18,sales,Card settlements and cash,249.56,
+2026-08-19,sales,Card settlements and cash,296.57,
+2026-08-19,supplier,Pentland Flower Wholesale,-674.93,Weekly flowers
+2026-08-20,sales,Card settlements and cash,308.26,
+2026-08-21,sales,Card settlements and cash,376.06,
+2026-08-22,sales,Card settlements and cash,1165.93,
+2026-08-23,sales,Card settlements and cash,202.97,
+2026-08-25,sales,Card settlements and cash,240.64,
+2026-08-26,sales,Card settlements and cash,289.64,
+2026-08-26,supplier,Pentland Flower Wholesale,-835.34,Weekly flowers
+2026-08-27,payroll,Payroll,-1900.0,Staff wages
+2026-08-27,sales,Card settlements and cash,270.93,
+2026-08-28,sales,Card settlements and cash,1498.38,
+2026-08-29,sales,Card settlements and cash,580.33,
+2026-08-30,sales,Card settlements and cash,201.86,
+2026-09-01,rent,Bruntsfield Lettings,-1450.0,Monthly rent
+2026-09-01,sales,Card settlements and cash,227.11,
+2026-09-02,sales,Card settlements and cash,228.02,
+2026-09-02,supplier,Pentland Flower Wholesale,-951.31,Weekly flowers
+2026-09-03,sales,Card settlements and cash,243.84,
+2026-09-04,sales,Card settlements and cash,352.77,
+2026-09-05,sales,Card settlements and cash,374.23,
+2026-09-06,sales,Card settlements and cash,170.92,
+2026-09-08,sales,Card settlements and cash,215.74,
+2026-09-09,sales,Card settlements and cash,275.75,
+2026-09-09,supplier,Pentland Flower Wholesale,-494.44,Weekly flowers
+2026-09-10,payroll,Payroll,-1900.0,Staff wages
+2026-09-10,sales,Card settlements and cash,298.34,
+2026-09-11,sales,Card settlements and cash,378.09,
+2026-09-12,sales,Card settlements and cash,473.09,
+2026-09-12,utilities,Edinburgh Energy Co,-171.78,Electricity
+2026-09-13,sales,Card settlements and cash,192.26,
+2026-09-15,loan,Van lease,-280.0,Van lease
+2026-09-15,sales,Card settlements and cash,205.16,
+2026-09-16,sales,Card settlements and cash,252.36,
+2026-09-16,supplier,Pentland Flower Wholesale,-627.79,Weekly flowers
+2026-09-17,sales,Card settlements and cash,279.86,
+2026-09-18,sales,Card settlements and cash,354.52,
+2026-09-19,sales,Card settlements and cash,476.91,
+2026-09-20,sales,Card settlements and cash,186.24,
+2026-09-22,sales,Card settlements and cash,240.3,
+2026-09-23,sales,Card settlements and cash,297.81,
+2026-09-23,supplier,Pentland Flower Wholesale,-567.57,Weekly flowers
+2026-09-24,payroll,Payroll,-1900.0,Staff wages
+2026-09-24,sales,Card settlements and cash,259.76,
+2026-09-25,sales,Card settlements and cash,416.45,
+2026-09-26,sales,Card settlements and cash,520.19,
+2026-09-27,sales,Card settlements and cash,196.4,
+2026-09-29,sales,Card settlements and cash,221.47,
+2026-09-30,sales,Card settlements and cash,320.39,
+2026-09-30,supplier,Pentland Flower Wholesale,-583.39,Weekly flowers
+2026-10-01,rent,Bruntsfield Lettings,-1450.0,Monthly rent
+2026-10-01,sales,Card settlements and cash,264.28,
+2026-10-02,sales,Card settlements and cash,399.09,
+2026-10-03,sales,Card settlements and cash,576.22,
+2026-10-04,sales,Card settlements and cash,170.9,
+2026-10-06,sales,Card settlements and cash,231.87,
+2026-10-07,sales,Card settlements and cash,215.52,
+2026-10-07,supplier,Pentland Flower Wholesale,-646.8,Weekly flowers
+2026-10-08,payroll,Payroll,-1900.0,Staff wages
+2026-10-08,sales,Card settlements and cash,213.29,
+2026-10-09,sales,Card settlements and cash,394.82,
+2026-10-10,sales,Card settlements and cash,526.13,
+2026-10-11,sales,Card settlements and cash,230.64,
+2026-10-12,utilities,Edinburgh Energy Co,-138.5,Electricity
+2026-10-13,sales,Card settlements and cash,214.23,
+2026-10-14,sales,Card settlements and cash,264.02,
+2026-10-14,supplier,Pentland Flower Wholesale,-554.0,Weekly flowers

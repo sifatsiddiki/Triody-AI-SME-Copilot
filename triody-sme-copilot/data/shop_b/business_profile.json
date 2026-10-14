@@ -1,0 +1,15 @@
+{
+  "name": "Kelvin Cycle Works (fictional)",
+  "sector": "retail",
+  "months_trading": 64,
+  "legal_form": "ltd",
+  "annual_revenue": 158000.0,
+  "credit_band": "good",
+  "card_share": 0.9,
+  "receivables": 0.0,
+  "collateral": false,
+  "supplier_relationship": true,
+  "existing_providers": [
+    "Bank of Scotland"
+  ]
+}

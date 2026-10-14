@@ -1,0 +1,19 @@
+[
+  {
+    "reference": "SIM-P-001",
+    "proposal_id": "P-001",
+    "kind": "financing_application",
+    "status": "submitted_simulated",
+    "product_id": "hmrc_ttp",
+    "product": "HMRC Time to Pay (tax payment plan)",
+    "amount": 5000,
+    "term_months": 6,
+    "cost": {
+      "total_cost": 113.63,
+      "total_repayment": 5113.63,
+      "monthly_burden": 852.27,
+      "cost_pct_per_year": 4.55
+    },
+    "currency_symbol": "\u00a3"
+  }
+]

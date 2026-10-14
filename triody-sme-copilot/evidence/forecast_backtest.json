@@ -1,0 +1,186 @@
+{
+  "A": {
+    "shop": "Harbour Street Café (fictional)",
+    "currency_symbol": "£",
+    "origins": 82,
+    "origin_step_days": 1,
+    "horizon_days": 28,
+    "weekly_sales_mape_pct": {
+      "model": 10.46,
+      "flat_28d_mean": 12.61,
+      "repeat_last_week": 11.09
+    },
+    "weekly_sales_bias_pct": {
+      "model": 4.21,
+      "flat_28d_mean": 5.2,
+      "repeat_last_week": 4.07
+    },
+    "balance_mae_gbp": {
+      "day_14": {
+        "model": 672.0,
+        "naive": 1441.0
+      },
+      "day_28": {
+        "model": 1471.0,
+        "naive": 2079.0
+      }
+    },
+    "range_coverage_pct": {
+      "balance_day_14": 87.8,
+      "balance_day_28": 87.8,
+      "nominal": 80.0
+    },
+    "range_coverage_95ci": {
+      "balance_day_14": [
+        79.0,
+        93.2
+      ],
+      "balance_day_28": [
+        79.0,
+        93.2
+      ]
+    },
+    "notes": [
+      "Origins move one day at a time and overlap, so results are not independent. The 95% intervals treat them as independent and are therefore too narrow.",
+      "Known tax payments are given to the forecast and to the naive baseline as owner commitments, as a real owner would."
+    ]
+  },
+  "B": {
+    "shop": "Kelvin Cycle Works (fictional)",
+    "currency_symbol": "£",
+    "origins": 82,
+    "origin_step_days": 1,
+    "horizon_days": 28,
+    "weekly_sales_mape_pct": {
+      "model": 17.27,
+      "flat_28d_mean": 26.12,
+      "repeat_last_week": 26.98
+    },
+    "weekly_sales_bias_pct": {
+      "model": -0.99,
+      "flat_28d_mean": 14.42,
+      "repeat_last_week": 10.62
+    },
+    "balance_mae_gbp": {
+      "day_14": {
+        "model": 1434.0,
+        "naive": 2721.0
+      },
+      "day_28": {
+        "model": 2098.0,
+        "naive": 3417.0
+      }
+    },
+    "range_coverage_pct": {
+      "balance_day_14": 91.46,
+      "balance_day_28": 95.12,
+      "nominal": 80.0
+    },
+    "range_coverage_95ci": {
+      "balance_day_14": [
+        83.4,
+        95.8
+      ],
+      "balance_day_28": [
+        88.1,
+        98.1
+      ]
+    },
+    "notes": [
+      "Origins move one day at a time and overlap, so results are not independent. The 95% intervals treat them as independent and are therefore too narrow.",
+      "Known tax payments are given to the forecast and to the naive baseline as owner commitments, as a real owner would."
+    ]
+  },
+  "C": {
+    "shop": "Morningside Flowers (fictional)",
+    "currency_symbol": "£",
+    "origins": 82,
+    "origin_step_days": 1,
+    "horizon_days": 28,
+    "weekly_sales_mape_pct": {
+      "model": 16.65,
+      "flat_28d_mean": 24.44,
+      "repeat_last_week": 25.57
+    },
+    "weekly_sales_bias_pct": {
+      "model": 3.41,
+      "flat_28d_mean": 14.82,
+      "repeat_last_week": 12.23
+    },
+    "balance_mae_gbp": {
+      "day_14": {
+        "model": 524.0,
+        "naive": 793.0
+      },
+      "day_28": {
+        "model": 780.0,
+        "naive": 1312.0
+      }
+    },
+    "range_coverage_pct": {
+      "balance_day_14": 70.73,
+      "balance_day_28": 79.27,
+      "nominal": 80.0
+    },
+    "range_coverage_95ci": {
+      "balance_day_14": [
+        60.1,
+        79.5
+      ],
+      "balance_day_28": [
+        69.3,
+        86.6
+      ]
+    },
+    "notes": [
+      "Origins move one day at a time and overlap, so results are not independent. The 95% intervals treat them as independent and are therefore too narrow.",
+      "Known tax payments are given to the forecast and to the naive baseline as owner commitments, as a real owner would."
+    ]
+  },
+  "D": {
+    "shop": "Futian Tea House (fictional)",
+    "currency_symbol": "¥",
+    "origins": 82,
+    "origin_step_days": 1,
+    "horizon_days": 28,
+    "weekly_sales_mape_pct": {
+      "model": 7.12,
+      "flat_28d_mean": 6.61,
+      "repeat_last_week": 6.93
+    },
+    "weekly_sales_bias_pct": {
+      "model": 1.69,
+      "flat_28d_mean": 3.11,
+      "repeat_last_week": 2.01
+    },
+    "balance_mae_gbp": {
+      "day_14": {
+        "model": 8060.0,
+        "naive": 25793.0
+      },
+      "day_28": {
+        "model": 6072.0,
+        "naive": 19401.0
+      }
+    },
+    "range_coverage_pct": {
+      "balance_day_14": 84.15,
+      "balance_day_28": 97.56,
+      "nominal": 80.0
+    },
+    "range_coverage_95ci": {
+      "balance_day_14": [
+        74.7,
+        90.5
+      ],
+      "balance_day_28": [
+        91.5,
+        99.3
+      ]
+    },
+    "notes": [
+      "Origins move one day at a time and overlap, so results are not independent. The 95% intervals treat them as independent and are therefore too narrow.",
+      "Known tax payments are given to the forecast and to the naive baseline as owner commitments, as a real owner would."
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Harbour Street Caf\u00e9 (fictional)",
+  "sector": "hospitality",
+  "months_trading": 31,
+  "legal_form": "ltd",
+  "annual_revenue": 205000.0,
+  "credit_band": "fair",
+  "card_share": 0.82,
+  "receivables": 0.0,
+  "collateral": false,
+  "supplier_relationship": true,
+  "existing_providers": [
+    "Lloyds Bank",
+    "Lloyds Cardnet"
+  ]
+}
