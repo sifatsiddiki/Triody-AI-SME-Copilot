@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; connect-src 'self'; img-src 'self'; worker-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d5fd0">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Cash forecast, figures and financing for a small business. Runs on your own device.">
+<title>Triody AI</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Triody">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="gate" class="gate" hidden>
+  <div class="gate-box" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <img src="icon.svg" alt="" width="56" height="56">
+    <h1 id="gate-title">Triody AI</h1>
+    <p id="gate-text" class="muted"></p>
+    <form id="gate-form" class="gate-form" autocomplete="off">
+      <label class="sr" for="gate-input">Code</label>
+      <input id="gate-input" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code" placeholder="6-digit code">
+      <button type="submit" class="primary" id="gate-submit">Continue</button>
+    </form>
+    <button type="button" class="primary wide" id="gate-unlock" hidden>Unlock</button>
+    <p id="gate-error" class="error" role="alert"></p>
+    <button type="button" class="link" id="gate-reset" hidden>Forgot? Reset this device</button>
+  </div>
+</div>
+<header>
+  <div class="top">
+    <h1><img src="icon.svg" alt="" width="30" height="30"> Triody AI</h1>
+    <div class="top-actions">
+      <span id="net" class="chip" aria-live="polite"></span>
+      <button type="button" id="install" class="small" hidden>Install app</button>
+      <button type="button" id="account" class="small" aria-haspopup="true" aria-expanded="false">Account</button>
+    </div>
+  </div>
+  <div id="account-menu" class="menu card" hidden>
+    <p id="account-status" class="muted"></p>
+    <div class="menu-row">
+      <button type="button" id="lock-setup" class="small" hidden>Unlock with Face ID or fingerprint</button>
+      <button type="button" id="pin-setup" class="small" hidden>Set a PIN instead</button>
+      <button type="button" id="lock-now" class="small" hidden>Lock now</button>
+      <button type="button" id="lock-remove" class="small" hidden>Turn off lock</button>
+      <button type="button" id="sign-out" class="small" hidden>Sign out this device</button>
+    </div>
+    <p id="install-hint" class="muted" hidden></p>
+  </div>
+  <p class="tag">Your small business finance copilot. <span id="shop"></span></p>
+  <p class="tag" id="switch"></p>
+  <p class="notice">Runs fully on your device, with or without internet. No data leaves this device. The shop and its numbers are synthetic. Reloading the page starts over.</p>
+</header>
+<main>
+  <section id="status" class="card" aria-live="polite">
+    <div id="alert" class="alert">Loading</div>
+    <div class="kpis">
+      <div><span class="label">Balance today</span><strong id="kpi-balance">-</strong></div>
+      <div><span class="label">Lowest expected</span><strong id="kpi-low">-</strong></div>
+      <div><span class="label">Chance of going below zero</span><strong id="kpi-prob">-</strong></div>
+    </div>
+    <svg id="chart" viewBox="0 0 720 300" role="img" aria-label="Cash forecast with range"></svg>
+    <p class="legend"><span class="sw band"></span>Range (8 in 10 outcomes) <span class="sw line"></span>Expected <span class="sw buf"></span>Safety buffer <span class="sw zero"></span>Zero</p>
+  </section>
+  <section class="card" id="chat-card">
+    <h2>Ask the copilot</h2>
+    <p id="brain" class="muted"></p>
+    <div id="chat" aria-live="polite"></div>
+    <div id="pending"></div>
+    <div class="quick">
+      <button type="button" disabled data-q="Is my business healthy?">Health check</button>
+      <button type="button" disabled data-q="Sales today">Sales today</button>
+      <button type="button" disabled data-q="Sales this month">This month</button>
+      <button type="button" disabled data-q="Will I run out of cash?">Will I run out of cash?</button>
+      <button type="button" disabled data-q="What bills are coming up?">Bills due</button>
+      <button type="button" disabled data-q="How can I improve cash flow?">What should I do?</button>
+      <button type="button" disabled data-q="How are my margins and costs?">Margins and costs</button>
+      <button type="button" disabled data-q="What financing fits?">What financing fits?</button>
+      <button type="button" disabled data-q="apply">Apply</button>
+    </div>
+    <form id="form">
+      <label class="sr" for="msg">Message</label>
+      <input id="msg" disabled autocomplete="off" enterkeyhint="send" maxlength="500" placeholder="Ask anything about your sales, costs, bills or cash">
+      <button type="submit" disabled>Send</button>
+    </form>
+  </section>
+  <section class="card device" id="device-card" aria-live="polite">
+    <h2>Owner device</h2>
+    <p class="muted">Stands in for the owner's phone. Approval codes arrive here on a separate channel. The chat and the language model never see them. In a real deployment this is an SMS or a push message in the banking app.</p>
+    <div id="device"><p class="muted">No codes waiting.</p></div>
+  </section>
+  <section class="card" id="pair-card" hidden>
+    <h2>Use Triody on your phone</h2>
+    <p class="muted">Connect the phone to the same Wi-Fi as this computer, open the address below and type the code. The phone stays signed in after that.</p>
+    <p class="pair-url" id="pair-url"></p>
+    <p class="code" id="pair-code"></p>
+    <p class="muted" id="pair-meta"></p>
+    <button type="button" id="pair-revoke" class="small">Sign out all other devices</button>
+  </section>
+  <section class="card">
+    <h2>Business analysis</h2>
+    <ul id="findings"></ul>
+    <div class="scroll"><table id="months"><thead><tr><th>Month</th><th>Sales</th><th>Gross margin</th><th>Wages / sales</th><th>Operating profit</th></tr></thead><tbody></tbody></table></div>
+    <h3>Biggest payees, last 90 days</h3>
+    <div class="scroll"><table id="payees"><thead><tr><th>Payee</th><th>Type</th><th>Amount</th><th>Share of costs</th><th>Per 100 of sales</th></tr></thead><tbody></tbody></table></div>
+    <p class="muted" id="analysis-note"></p>
+  </section>
+  <section class="card">
+    <h2>Audit log</h2>
+    <p id="chain" class="muted"></p>
+    <div class="scroll"><table id="audit"><thead><tr><th>#</th><th>Time</th><th>Who</th><th>Event</th><th>Detail</th></tr></thead><tbody></tbody></table></div>
+  </section>
+</main>
+<script src="pyodide/pyodide.js"></script>
+<script src="boot.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

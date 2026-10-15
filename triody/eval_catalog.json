@@ -1,0 +1,297 @@
+{
+ "note": "Frozen illustrative catalogue. The 30 labelled cases in eval_set.py were written against it, so the matcher test keeps using it. The live product list is catalog.json, built from public UK sources.",
+ "products": [
+  {
+   "id": "overdraft",
+   "name": "Arranged overdraft",
+   "min_amount": 500,
+   "max_amount": 25000,
+   "min_term": 1,
+   "max_term": 12,
+   "cost": {
+    "model": "amortising",
+    "apr": 24.9,
+    "fee_pct": 0.0
+   },
+   "speed_days": 2,
+   "min_months_trading": 6,
+   "max_months_trading": null,
+   "min_annual_revenue": 30000,
+   "min_credit": "fair",
+   "requires_collateral": false,
+   "purposes": [
+    "cash_gap"
+   ],
+   "primary_purposes": [
+    "cash_gap"
+   ],
+   "repay_fraction": 0.5,
+   "risk": 1.0,
+   "notes": "Flexible. Pay interest only on what you use."
+  },
+  {
+   "id": "wc_loan",
+   "name": "Short-term working capital loan",
+   "min_amount": 5000,
+   "max_amount": 100000,
+   "min_term": 3,
+   "max_term": 24,
+   "cost": {
+    "model": "amortising",
+    "apr": 14.5,
+    "fee_pct": 1.5
+   },
+   "speed_days": 5,
+   "min_months_trading": 12,
+   "max_months_trading": null,
+   "min_annual_revenue": 60000,
+   "min_credit": "fair",
+   "requires_collateral": false,
+   "purposes": [
+    "cash_gap",
+    "stock",
+    "growth"
+   ],
+   "primary_purposes": [
+    "cash_gap",
+    "stock"
+   ],
+   "repay_fraction": 1.0,
+   "risk": 0.7,
+   "notes": "Fixed repayments."
+  },
+  {
+   "id": "credit_line",
+   "name": "Revolving business credit line",
+   "min_amount": 10000,
+   "max_amount": 250000,
+   "min_term": 12,
+   "max_term": 36,
+   "cost": {
+    "model": "amortising",
+    "apr": 11.9,
+    "fee_pct": 1.0
+   },
+   "speed_days": 10,
+   "min_months_trading": 18,
+   "max_months_trading": null,
+   "min_annual_revenue": 120000,
+   "min_credit": "good",
+   "requires_collateral": false,
+   "purposes": [
+    "cash_gap",
+    "stock",
+    "growth"
+   ],
+   "primary_purposes": [
+    "growth"
+   ],
+   "repay_fraction": 0.5,
+   "risk": 1.0,
+   "notes": "Draw and repay as needed."
+  },
+  {
+   "id": "invoice_fin",
+   "name": "Invoice finance",
+   "min_amount": 5000,
+   "max_amount": 500000,
+   "min_term": 1,
+   "max_term": 12,
+   "cost": {
+    "model": "period_fee",
+    "fee_pct_per_month": 1.2
+   },
+   "speed_days": 4,
+   "min_months_trading": 6,
+   "max_months_trading": null,
+   "min_annual_revenue": 40000,
+   "min_credit": "weak",
+   "requires_collateral": false,
+   "requires_receivables_cover": 0.85,
+   "purposes": [
+    "cash_gap",
+    "growth"
+   ],
+   "primary_purposes": [
+    "cash_gap"
+   ],
+   "repay_fraction": 0.0,
+   "risk": 0.8,
+   "notes": "Advance against unpaid customer invoices. Customers repay the principal."
+  },
+  {
+   "id": "mca",
+   "name": "Card-sales cash advance",
+   "min_amount": 3000,
+   "max_amount": 100000,
+   "min_term": 3,
+   "max_term": 12,
+   "cost": {
+    "model": "factor",
+    "factor_rate": 1.2
+   },
+   "speed_days": 2,
+   "min_months_trading": 6,
+   "max_months_trading": null,
+   "min_annual_revenue": 36000,
+   "min_credit": "weak",
+   "requires_collateral": false,
+   "requires_card_share": 0.5,
+   "purposes": [
+    "cash_gap",
+    "stock"
+   ],
+   "primary_purposes": [],
+   "repay_fraction": 1.0,
+   "risk": 0.3,
+   "notes": "Repaid as a share of daily card sales. Expensive. Last resort."
+  },
+  {
+   "id": "term_loan",
+   "name": "Fixed-term business loan",
+   "min_amount": 10000,
+   "max_amount": 500000,
+   "min_term": 24,
+   "max_term": 84,
+   "cost": {
+    "model": "amortising",
+    "apr": 8.9,
+    "fee_pct": 1.0
+   },
+   "speed_days": 21,
+   "min_months_trading": 24,
+   "max_months_trading": null,
+   "min_annual_revenue": 150000,
+   "min_credit": "good",
+   "requires_collateral": false,
+   "purposes": [
+    "growth",
+    "equipment"
+   ],
+   "primary_purposes": [
+    "growth"
+   ],
+   "repay_fraction": 1.0,
+   "risk": 0.7,
+   "notes": "Lowest unsecured rate, slowest to arrive."
+  },
+  {
+   "id": "equipment_fin",
+   "name": "Equipment finance",
+   "min_amount": 5000,
+   "max_amount": 300000,
+   "min_term": 12,
+   "max_term": 60,
+   "cost": {
+    "model": "amortising",
+    "apr": 7.9,
+    "fee_pct": 0.5
+   },
+   "speed_days": 10,
+   "min_months_trading": 12,
+   "max_months_trading": null,
+   "min_annual_revenue": 50000,
+   "min_credit": "fair",
+   "requires_collateral": false,
+   "purposes": [
+    "equipment"
+   ],
+   "primary_purposes": [
+    "equipment"
+   ],
+   "repay_fraction": 1.0,
+   "risk": 0.8,
+   "notes": "Secured on the equipment being bought."
+  },
+  {
+   "id": "young_loan",
+   "name": "Young-business loan",
+   "min_amount": 2000,
+   "max_amount": 50000,
+   "min_term": 12,
+   "max_term": 60,
+   "cost": {
+    "model": "amortising",
+    "apr": 9.5,
+    "fee_pct": 0.0
+   },
+   "speed_days": 14,
+   "min_months_trading": 0,
+   "max_months_trading": 36,
+   "min_annual_revenue": 0,
+   "min_credit": "fair",
+   "requires_collateral": false,
+   "purposes": [
+    "growth",
+    "equipment",
+    "stock"
+   ],
+   "primary_purposes": [
+    "growth",
+    "equipment"
+   ],
+   "repay_fraction": 1.0,
+   "risk": 0.7,
+   "notes": "For businesses trading 36 months or less."
+  },
+  {
+   "id": "supplier_credit",
+   "name": "Supplier trade credit extension",
+   "min_amount": 1000,
+   "max_amount": 30000,
+   "min_term": 1,
+   "max_term": 3,
+   "cost": {
+    "model": "flat_fee",
+    "fee_pct": 1.5
+   },
+   "speed_days": 3,
+   "min_months_trading": 6,
+   "max_months_trading": null,
+   "min_annual_revenue": 20000,
+   "min_credit": "fair",
+   "requires_collateral": false,
+   "requires_supplier_relationship": true,
+   "purposes": [
+    "stock",
+    "cash_gap"
+   ],
+   "primary_purposes": [
+    "stock"
+   ],
+   "repay_fraction": 1.0,
+   "risk": 0.9,
+   "notes": "Longer payment terms from a supplier you already use."
+  },
+  {
+   "id": "secured_loan",
+   "name": "Secured term loan",
+   "min_amount": 50000,
+   "max_amount": 1000000,
+   "min_term": 36,
+   "max_term": 120,
+   "cost": {
+    "model": "amortising",
+    "apr": 6.9,
+    "fee_pct": 1.0
+   },
+   "speed_days": 30,
+   "min_months_trading": 24,
+   "max_months_trading": null,
+   "min_annual_revenue": 200000,
+   "min_credit": "fair",
+   "requires_collateral": true,
+   "purposes": [
+    "growth",
+    "equipment",
+    "stock"
+   ],
+   "primary_purposes": [
+    "growth"
+   ],
+   "repay_fraction": 1.0,
+   "risk": 0.4,
+   "notes": "Lowest rate. Puts an asset at risk."
+  }
+ ]
+}
