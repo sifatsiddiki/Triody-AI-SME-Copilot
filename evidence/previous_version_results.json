@@ -1,0 +1,132 @@
+{
+  "version_1": {
+    "what": "Results of the previous forecast model (before 14 Oct 2026 changes), run with the same backtest protocol as today: origins every day, 28-day horizon, 300 simulations.",
+    "shop_A": {
+      "weekly_sales_mape_pct": {
+        "model": 11.3,
+        "flat_28d_mean": 12.61,
+        "repeat_last_week": 11.09
+      },
+      "weekly_sales_bias_pct": {
+        "model": 5.38,
+        "flat_28d_mean": 5.2,
+        "repeat_last_week": 4.07
+      },
+      "range_coverage_pct": {
+        "balance_day_14": 35.37,
+        "balance_day_28": 74.39,
+        "nominal": 80.0
+      }
+    },
+    "shop_B": "crashed: division by zero on a day the shop is closed",
+    "shop_C": "crashed: division by zero on a day the shop is closed",
+    "previous_published_figures": {
+      "note": "Figures in the earlier deck and docs used origins every 7 days (12 origins).",
+      "weekly_sales_mape_pct": {
+        "model": 10.85,
+        "repeat_last_week": 10.36
+      },
+      "range_coverage_pct": {
+        "balance_day_14": 58.33,
+        "balance_day_28": 83.33
+      }
+    },
+    "previous_matcher": {
+      "strict_top1_pct": 76.7,
+      "relaxed_top1_pct": 80.0,
+      "correct_abstain": "6/6",
+      "false_abstain": "4/24"
+    }
+  },
+  "version_2": {
+    "what": "Forecast results of the version sent for review on 14 October 2026, before the one-off and recurring-bill fixes, same protocol. Shop D did not exist then. Its row comes from running that version on shop D once, for comparison.",
+    "shop_A": {
+      "weekly_sales_mape_pct": {
+        "model": 10.46,
+        "flat_28d_mean": 12.61,
+        "repeat_last_week": 11.09
+      },
+      "balance_mae_gbp": {
+        "day_14": {
+          "model": 961.0,
+          "naive": 1441.0
+        },
+        "day_28": {
+          "model": 1566.0,
+          "naive": 2079.0
+        }
+      },
+      "range_coverage_pct": {
+        "balance_day_14": 79.27,
+        "balance_day_28": 81.71,
+        "nominal": 80.0
+      }
+    },
+    "shop_B": {
+      "weekly_sales_mape_pct": {
+        "model": 25.35,
+        "flat_28d_mean": 26.12,
+        "repeat_last_week": 26.98
+      },
+      "balance_mae_gbp": {
+        "day_14": {
+          "model": 2175.0,
+          "naive": 2721.0
+        },
+        "day_28": {
+          "model": 2946.0,
+          "naive": 3417.0
+        }
+      },
+      "range_coverage_pct": {
+        "balance_day_14": 73.17,
+        "balance_day_28": 82.93,
+        "nominal": 80.0
+      }
+    },
+    "shop_C": {
+      "weekly_sales_mape_pct": {
+        "model": 23.56,
+        "flat_28d_mean": 24.44,
+        "repeat_last_week": 25.57
+      },
+      "balance_mae_gbp": {
+        "day_14": {
+          "model": 715.0,
+          "naive": 793.0
+        },
+        "day_28": {
+          "model": 1140.0,
+          "naive": 1312.0
+        }
+      },
+      "range_coverage_pct": {
+        "balance_day_14": 64.63,
+        "balance_day_28": 63.41,
+        "nominal": 80.0
+      }
+    },
+    "shop_D": {
+      "weekly_sales_mape_pct": {
+        "model": 7.12,
+        "flat_28d_mean": 6.61,
+        "repeat_last_week": 6.93
+      },
+      "balance_mae_gbp": {
+        "day_14": {
+          "model": 16575.0,
+          "naive": 25793.0
+        },
+        "day_28": {
+          "model": 12156.0,
+          "naive": 19401.0
+        }
+      },
+      "range_coverage_pct": {
+        "balance_day_14": 59.76,
+        "balance_day_28": 84.15,
+        "nominal": 80.0
+      }
+    }
+  }
+}

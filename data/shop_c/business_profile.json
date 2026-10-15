@@ -1,0 +1,15 @@
+{
+  "name": "Morningside Flowers (fictional)",
+  "sector": "retail",
+  "months_trading": 19,
+  "legal_form": "sole_trader",
+  "annual_revenue": 98000.0,
+  "credit_band": "fair",
+  "card_share": 0.88,
+  "receivables": 0.0,
+  "collateral": false,
+  "supplier_relationship": true,
+  "existing_providers": [
+    "NatWest"
+  ]
+}

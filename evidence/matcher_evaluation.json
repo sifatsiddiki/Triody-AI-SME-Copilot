@@ -1,0 +1,749 @@
+{
+  "cases": 30,
+  "matcher": {
+    "strict_top1_pct": 86.7,
+    "relaxed_top1_pct": 90.0,
+    "correct_abstain": "6/6",
+    "false_abstain": "1/24"
+  },
+  "baseline_cheapest_eligible": {
+    "strict_top1_pct": 76.7,
+    "relaxed_top1_pct": 83.3,
+    "correct_abstain": "4/6",
+    "false_abstain": "0/24"
+  },
+  "baseline_random_eligible": {
+    "strict_top1_pct": 58.8,
+    "relaxed_top1_pct": 70.3,
+    "note": "mean of 500 random draws"
+  },
+  "ablation_no_affordability": {
+    "strict_top1_pct": 86.7,
+    "relaxed_top1_pct": 90.0,
+    "correct_abstain": "4/6",
+    "false_abstain": "0/24"
+  },
+  "top3_hit_rate_pct": 100.0,
+  "top3_cases": 24,
+  "label_corrections": [],
+  "rows": [
+    {
+      "case": "A1",
+      "gold": "overdraft",
+      "acceptable": [
+        "overdraft"
+      ],
+      "matcher": "overdraft",
+      "cheapest": "wc_loan",
+      "matcher_ok": true,
+      "why": "Money is needed in 3 days. Only the overdraft and the costly cash advance arrive that fast."
+    },
+    {
+      "case": "A2",
+      "gold": "wc_loan",
+      "acceptable": [
+        "wc_loan",
+        "overdraft"
+      ],
+      "matcher": "overdraft",
+      "cheapest": "wc_loan",
+      "matcher_ok": true,
+      "why": "Two weeks is enough for the cheaper 5-day loan."
+    },
+    {
+      "case": "A3",
+      "gold": "supplier_credit",
+      "acceptable": [
+        "supplier_credit",
+        "overdraft"
+      ],
+      "matcher": null,
+      "cheapest": "supplier_credit",
+      "matcher_ok": false,
+      "why": "Small, short gap and a supplier relationship: a supplier extension is cheapest."
+    },
+    {
+      "case": "A4",
+      "gold": null,
+      "acceptable": [
+        null
+      ],
+      "matcher": null,
+      "cheapest": null,
+      "matcher_ok": true,
+      "why": "Five months of trading and a weak credit profile. Nothing in the catalogue is offered."
+    },
+    {
+      "case": "A5",
+      "gold": "wc_loan",
+      "acceptable": [
+        "wc_loan"
+      ],
+      "matcher": "overdraft",
+      "cheapest": "wc_loan",
+      "matcher_ok": false,
+      "why": "Mid-size gap, 10 days to arrange: the working capital loan is cheaper than the cash advance."
+    },
+    {
+      "case": "B1",
+      "gold": "invoice_fin",
+      "acceptable": [
+        "invoice_fin"
+      ],
+      "matcher": "invoice_fin",
+      "cheapest": "invoice_fin",
+      "matcher_ok": true,
+      "why": "Customers owe 90k. Invoice finance is repaid by those invoices, a loan would add 13k a month."
+    },
+    {
+      "case": "B2",
+      "gold": "invoice_fin",
+      "acceptable": [
+        "invoice_fin"
+      ],
+      "matcher": "invoice_fin",
+      "cheapest": "invoice_fin",
+      "matcher_ok": true,
+      "why": "Weak credit and a young business, but unpaid invoices support invoice finance."
+    },
+    {
+      "case": "B3",
+      "gold": "credit_line",
+      "acceptable": [
+        "credit_line",
+        "invoice_fin"
+      ],
+      "matcher": "credit_line",
+      "cheapest": "credit_line",
+      "matcher_ok": true,
+      "why": "Strong business: the credit line is cheaper, invoice finance also works."
+    },
+    {
+      "case": "B4",
+      "gold": null,
+      "acceptable": [
+        null
+      ],
+      "matcher": null,
+      "cheapest": null,
+      "matcher_ok": true,
+      "why": "60k in 2 months with only 20k of invoices. No product fits as asked."
+    },
+    {
+      "case": "B5",
+      "gold": "invoice_fin",
+      "acceptable": [
+        "invoice_fin"
+      ],
+      "matcher": "invoice_fin",
+      "cheapest": "invoice_fin",
+      "matcher_ok": true,
+      "why": "The overdraft repayment would be far above free cash flow. Invoice finance costs 300 a month."
+    },
+    {
+      "case": "C1",
+      "gold": "equipment_fin",
+      "acceptable": [
+        "equipment_fin",
+        "young_loan"
+      ],
+      "matcher": "equipment_fin",
+      "cheapest": "equipment_fin",
+      "matcher_ok": true,
+      "why": "Equipment finance has the lowest rate and is secured on the equipment."
+    },
+    {
+      "case": "C2",
+      "gold": "equipment_fin",
+      "acceptable": [
+        "equipment_fin",
+        "secured_loan"
+      ],
+      "matcher": "equipment_fin",
+      "cheapest": "secured_loan",
+      "matcher_ok": true,
+      "why": "Equipment finance does not put other assets at risk."
+    },
+    {
+      "case": "C3",
+      "gold": "young_loan",
+      "acceptable": [
+        "young_loan"
+      ],
+      "matcher": "young_loan",
+      "cheapest": "young_loan",
+      "matcher_ok": true,
+      "why": "Too young for equipment finance. The young-business loan fits."
+    },
+    {
+      "case": "C4",
+      "gold": "equipment_fin",
+      "acceptable": [
+        "equipment_fin",
+        "term_loan"
+      ],
+      "matcher": "equipment_fin",
+      "cheapest": "equipment_fin",
+      "matcher_ok": true,
+      "why": "Lowest rate for equipment."
+    },
+    {
+      "case": "C5",
+      "gold": null,
+      "acceptable": [
+        null
+      ],
+      "matcher": null,
+      "cheapest": "equipment_fin",
+      "matcher_ok": true,
+      "why": "Eligible, but about 940 a month against 300 of free cash flow. Should not be recommended."
+    },
+    {
+      "case": "D1",
+      "gold": "term_loan",
+      "acceptable": [
+        "term_loan"
+      ],
+      "matcher": "term_loan",
+      "cheapest": "term_loan",
+      "matcher_ok": true,
+      "why": "Established, good credit, no rush: the term loan is cheapest."
+    },
+    {
+      "case": "D2",
+      "gold": "term_loan",
+      "acceptable": [
+        "term_loan",
+        "young_loan"
+      ],
+      "matcher": "credit_line",
+      "cheapest": "young_loan",
+      "matcher_ok": false,
+      "why": "Lowest rate, 30 days is enough."
+    },
+    {
+      "case": "D3",
+      "gold": "young_loan",
+      "acceptable": [
+        "young_loan"
+      ],
+      "matcher": "young_loan",
+      "cheapest": "young_loan",
+      "matcher_ok": true,
+      "why": "Cheaper than the working capital loan and arrives within 20 days."
+    },
+    {
+      "case": "D4",
+      "gold": null,
+      "acceptable": [
+        null
+      ],
+      "matcher": null,
+      "cheapest": null,
+      "matcher_ok": true,
+      "why": "100k after one year of trading with no security. Nothing fits."
+    },
+    {
+      "case": "D5",
+      "gold": "secured_loan",
+      "acceptable": [
+        "secured_loan",
+        "term_loan"
+      ],
+      "matcher": "secured_loan",
+      "cheapest": "secured_loan",
+      "matcher_ok": true,
+      "why": "Large and long: the secured loan saves a lot of interest."
+    },
+    {
+      "case": "E1",
+      "gold": "wc_loan",
+      "acceptable": [
+        "wc_loan"
+      ],
+      "matcher": "wc_loan",
+      "cheapest": "wc_loan",
+      "matcher_ok": true,
+      "why": "Four months is above the supplier extension limit."
+    },
+    {
+      "case": "E2",
+      "gold": "supplier_credit",
+      "acceptable": [
+        "supplier_credit",
+        "wc_loan"
+      ],
+      "matcher": "supplier_credit",
+      "cheapest": "supplier_credit",
+      "matcher_ok": true,
+      "why": "Two months and a supplier relationship: the extension is cheapest."
+    },
+    {
+      "case": "E3",
+      "gold": "wc_loan",
+      "acceptable": [
+        "wc_loan"
+      ],
+      "matcher": "wc_loan",
+      "cheapest": "wc_loan",
+      "matcher_ok": true,
+      "why": "No supplier relationship, mid-size need."
+    },
+    {
+      "case": "E4",
+      "gold": null,
+      "acceptable": [
+        null
+      ],
+      "matcher": null,
+      "cheapest": null,
+      "matcher_ok": true,
+      "why": "Young, weak credit, 20k. Nothing fits."
+    },
+    {
+      "case": "E5",
+      "gold": "credit_line",
+      "acceptable": [
+        "credit_line"
+      ],
+      "matcher": "credit_line",
+      "cheapest": "credit_line",
+      "matcher_ok": true,
+      "why": "Cheaper and lighter on cash flow than the working capital loan."
+    },
+    {
+      "case": "F1",
+      "gold": "young_loan",
+      "acceptable": [
+        "young_loan"
+      ],
+      "matcher": "young_loan",
+      "cheapest": "young_loan",
+      "matcher_ok": true,
+      "why": "Three months of trading: only the young-business loan accepts that."
+    },
+    {
+      "case": "F2",
+      "gold": null,
+      "acceptable": [
+        null
+      ],
+      "matcher": null,
+      "cheapest": "mca",
+      "matcher_ok": true,
+      "why": "Only the 20 percent cash advance is eligible, 1,200 a month against 200 of free cash flow."
+    },
+    {
+      "case": "F3",
+      "gold": "overdraft",
+      "acceptable": [
+        "overdraft"
+      ],
+      "matcher": "overdraft",
+      "cheapest": "wc_loan",
+      "matcher_ok": true,
+      "why": "Needed in 3 days and the overdraft is the cheapest option that arrives in time."
+    },
+    {
+      "case": "F4",
+      "gold": "invoice_fin",
+      "acceptable": [
+        "invoice_fin"
+      ],
+      "matcher": "invoice_fin",
+      "cheapest": "wc_loan",
+      "matcher_ok": true,
+      "why": "Invoice finance costs about 216 a month. The loans would cost 1,500 or more."
+    },
+    {
+      "case": "F5",
+      "gold": "credit_line",
+      "acceptable": [
+        "credit_line",
+        "wc_loan"
+      ],
+      "matcher": "credit_line",
+      "cheapest": "credit_line",
+      "matcher_ok": true,
+      "why": "Cheapest and flexible, arrives within 14 days."
+    }
+  ],
+  "heldout": {
+    "cases": 14,
+    "matcher": {
+      "strict_top1_pct": 85.7,
+      "relaxed_top1_pct": 100.0,
+      "correct_abstain": "3/3",
+      "false_abstain": "0/11"
+    },
+    "baseline_cheapest_eligible": {
+      "strict_top1_pct": 71.4,
+      "relaxed_top1_pct": 85.7,
+      "correct_abstain": "1/3",
+      "false_abstain": "0/11"
+    },
+    "ablation_no_affordability": {
+      "strict_top1_pct": 71.4,
+      "relaxed_top1_pct": 85.7,
+      "correct_abstain": "1/3",
+      "false_abstain": "0/11"
+    },
+    "rows": [
+      {
+        "case": "H1",
+        "gold": "hmrc_ttp",
+        "acceptable": [
+          "hmrc_ttp",
+          "lloyds_overdraft"
+        ],
+        "matcher": "hmrc_ttp",
+        "cheapest": "hmrc_ttp",
+        "matcher_ok": true,
+        "why": "The gap comes from a VAT bill. A payment plan with HMRC costs 7.75% and needs no new lender."
+      },
+      {
+        "case": "H2",
+        "gold": "lloyds_overdraft",
+        "acceptable": [
+          "lloyds_overdraft"
+        ],
+        "matcher": "lloyds_overdraft",
+        "cheapest": "lloyds_overdraft",
+        "matcher_ok": true,
+        "why": "No tax bill. The existing bank's overdraft is the cheapest fast option."
+      },
+      {
+        "case": "H3",
+        "gold": "iwoca_flexi",
+        "acceptable": [
+          "iwoca_flexi"
+        ],
+        "matcher": "iwoca_flexi",
+        "cheapest": "iwoca_flexi",
+        "matcher_ok": true,
+        "why": "Not a Lloyds or Cardnet customer and money is needed in 2 days. Only iwoca fits. Expensive but affordable."
+      },
+      {
+        "case": "H4",
+        "gold": "lloyds_overdraft",
+        "acceptable": [
+          "lloyds_overdraft"
+        ],
+        "matcher": "lloyds_overdraft",
+        "cheapest": "lloyds_overdraft",
+        "matcher_ok": true,
+        "why": "Christmas stock. Sales of the stock repay most of it, so the overdraft is affordable and cheapest."
+      },
+      {
+        "case": "H5",
+        "gold": null,
+        "acceptable": [
+          null
+        ],
+        "matcher": null,
+        "cheapest": "funding_circle",
+        "matcher_ok": true,
+        "why": "Two years is too long for stock to repay itself. About 900 a month against 600 of free cash flow."
+      },
+      {
+        "case": "H6",
+        "gold": "asset_finance",
+        "acceptable": [
+          "asset_finance",
+          "funding_circle"
+        ],
+        "matcher": "funding_circle",
+        "cheapest": "funding_circle",
+        "matcher_ok": true,
+        "why": "Hire purchase is secured on the machine itself. Funding Circle's rate is only a best case."
+      },
+      {
+        "case": "H7",
+        "gold": "invoice_finance",
+        "acceptable": [
+          "invoice_finance"
+        ],
+        "matcher": "invoice_finance",
+        "cheapest": "invoice_finance",
+        "matcher_ok": true,
+        "why": "Customers owe 60k. Invoice finance costs about 640 a month. A loan would need 10k a month."
+      },
+      {
+        "case": "H8",
+        "gold": "start_up_loan",
+        "acceptable": [
+          "start_up_loan"
+        ],
+        "matcher": "start_up_loan",
+        "cheapest": "start_up_loan",
+        "matcher_ok": true,
+        "why": "Eight months old, 45 days to wait. The Start Up Loan is cheap and comes with mentoring."
+      },
+      {
+        "case": "H9",
+        "gold": null,
+        "acceptable": [
+          null
+        ],
+        "matcher": null,
+        "cheapest": null,
+        "matcher_ok": true,
+        "why": "Three months old with a weak credit profile and no tax bill. Nothing should be offered."
+      },
+      {
+        "case": "H10",
+        "gold": null,
+        "acceptable": [
+          null
+        ],
+        "matcher": null,
+        "cheapest": "hmrc_ttp",
+        "matcher_ok": true,
+        "why": "18k back in 10 months is about 1,900 a month against 1,500 of free cash flow. A longer HMRC plan by phone is the real answer, outside the model."
+      },
+      {
+        "case": "H11",
+        "gold": "cardnet_mca",
+        "acceptable": [
+          "cardnet_mca",
+          null
+        ],
+        "matcher": "cardnet_mca",
+        "cheapest": "cardnet_mca",
+        "matcher_ok": true,
+        "why": "Weak credit and money needed in 3 days. The card advance is the only option and is affordable, though costly."
+      },
+      {
+        "case": "H12",
+        "gold": "supplier_terms",
+        "acceptable": [
+          "supplier_terms"
+        ],
+        "matcher": "supplier_terms",
+        "cheapest": "supplier_terms",
+        "matcher_ok": true,
+        "why": "Two months of stock from a supplier already used. Longer terms are far cheaper than iwoca."
+      },
+      {
+        "case": "H13",
+        "gold": "start_up_loan",
+        "acceptable": [
+          "start_up_loan",
+          "asset_finance"
+        ],
+        "matcher": "start_up_loan",
+        "cheapest": "start_up_loan",
+        "matcher_ok": true,
+        "why": "7.5% against about 17% for hire purchase on a fair profile. 30 days is enough for the Start Up Loan."
+      },
+      {
+        "case": "H14",
+        "gold": "funding_circle",
+        "acceptable": [
+          "funding_circle",
+          "secured_loan"
+        ],
+        "matcher": "secured_loan",
+        "cheapest": "secured_loan",
+        "matcher_ok": true,
+        "why": "Unsecured growth loan keeps the property out of it. The secured loan is a fair second."
+      }
+    ]
+  },
+  "heldout_new": {
+    "cases": 15,
+    "matcher": {
+      "strict_top1_pct": 93.3,
+      "relaxed_top1_pct": 100.0,
+      "correct_abstain": "2/2",
+      "false_abstain": "0/13"
+    },
+    "baseline_cheapest_eligible": {
+      "strict_top1_pct": 86.7,
+      "relaxed_top1_pct": 93.3,
+      "correct_abstain": "1/2",
+      "false_abstain": "0/13"
+    },
+    "ablation_no_affordability": {
+      "strict_top1_pct": 86.7,
+      "relaxed_top1_pct": 93.3,
+      "correct_abstain": "1/2",
+      "false_abstain": "0/13"
+    },
+    "rows": [
+      {
+        "case": "N1",
+        "gold": "hmrc_ttp",
+        "acceptable": [
+          "hmrc_ttp",
+          "lloyds_overdraft"
+        ],
+        "matcher": "hmrc_ttp",
+        "cheapest": "hmrc_ttp",
+        "matcher_ok": true,
+        "why": "The whole gap is a VAT bill. Paying HMRC in instalments costs least and adds no new lender."
+      },
+      {
+        "case": "N2",
+        "gold": "lloyds_overdraft",
+        "acceptable": [
+          "lloyds_overdraft",
+          "iwoca_flexi"
+        ],
+        "matcher": "lloyds_overdraft",
+        "cheapest": "lloyds_overdraft",
+        "matcher_ok": true,
+        "why": "The gap is three times the tax bill, so a tax plan cannot cover it. The existing bank's overdraft can."
+      },
+      {
+        "case": "N3",
+        "gold": "start_up_loan",
+        "acceptable": [
+          "start_up_loan",
+          "asset_finance"
+        ],
+        "matcher": "start_up_loan",
+        "cheapest": "start_up_loan",
+        "matcher_ok": true,
+        "why": "Two years old, a month to wait. The government-backed loan is far cheaper than hire purchase on a fair profile."
+      },
+      {
+        "case": "N4",
+        "gold": "asset_finance",
+        "acceptable": [
+          "asset_finance",
+          "funding_circle"
+        ],
+        "matcher": "funding_circle",
+        "cheapest": "funding_circle",
+        "matcher_ok": true,
+        "why": "A machine over five years: hire purchase is secured on the machine at a real rate. Funding Circle's rate is a best case."
+      },
+      {
+        "case": "N5",
+        "gold": "cardnet_mca",
+        "acceptable": [
+          "cardnet_mca",
+          null
+        ],
+        "matcher": "cardnet_mca",
+        "cheapest": "cardnet_mca",
+        "matcher_ok": true,
+        "why": "Weak credit, cash needed in 2 days, most sales on card through Cardnet. The card advance is the only route."
+      },
+      {
+        "case": "N6",
+        "gold": "invoice_finance",
+        "acceptable": [
+          "invoice_finance"
+        ],
+        "matcher": "invoice_finance",
+        "cheapest": "invoice_finance",
+        "matcher_ok": true,
+        "why": "Customers owe 40k. Borrowing against those invoices costs little each month. A loan would need about 7k a month."
+      },
+      {
+        "case": "N7",
+        "gold": "start_up_loan",
+        "acceptable": [
+          "start_up_loan"
+        ],
+        "matcher": "start_up_loan",
+        "cheapest": "start_up_loan",
+        "matcher_ok": true,
+        "why": "Two months old. Only the Start Up Loan lends this early, and the repayment is affordable."
+      },
+      {
+        "case": "N8",
+        "gold": null,
+        "acceptable": [
+          null
+        ],
+        "matcher": null,
+        "cheapest": "iwoca_flexi",
+        "matcher_ok": true,
+        "why": "50k back in 6 months is over 8k a month against 3k of free cash flow. Nothing should be recommended."
+      },
+      {
+        "case": "N9",
+        "gold": "supplier_terms",
+        "acceptable": [
+          "supplier_terms",
+          "iwoca_flexi"
+        ],
+        "matcher": "supplier_terms",
+        "cheapest": "supplier_terms",
+        "matcher_ok": true,
+        "why": "Three months of stock from a supplier already used. Longer terms cost a fraction of an unsecured loan."
+      },
+      {
+        "case": "N10",
+        "gold": "secured_loan",
+        "acceptable": [
+          "secured_loan"
+        ],
+        "matcher": "secured_loan",
+        "cheapest": "secured_loan",
+        "matcher_ok": true,
+        "why": "Ten years is beyond Funding Circle's six. A loan secured on property is the cheapest long money."
+      },
+      {
+        "case": "N11",
+        "gold": "hmrc_ttp",
+        "acceptable": [
+          "hmrc_ttp"
+        ],
+        "matcher": "hmrc_ttp",
+        "cheapest": "hmrc_ttp",
+        "matcher_ok": true,
+        "why": "A 30k tax bill over 12 months is about 2,600 a month against 3,500 of free cash flow. Affordable and cheapest."
+      },
+      {
+        "case": "N12",
+        "gold": null,
+        "acceptable": [
+          null
+        ],
+        "matcher": null,
+        "cheapest": null,
+        "matcher_ok": true,
+        "why": "Weak credit, no card sales, no unpaid invoices and no tax bill. No product should be offered."
+      },
+      {
+        "case": "N13",
+        "gold": "lloyds_overdraft",
+        "acceptable": [
+          "lloyds_overdraft",
+          "iwoca_flexi"
+        ],
+        "matcher": "lloyds_overdraft",
+        "cheapest": "lloyds_overdraft",
+        "matcher_ok": true,
+        "why": "Seasonal stock for four months with the existing bank. The overdraft is cheaper than iwoca and the stock repays it."
+      },
+      {
+        "case": "N14",
+        "gold": "asset_finance",
+        "acceptable": [
+          "asset_finance"
+        ],
+        "matcher": "asset_finance",
+        "cheapest": "asset_finance",
+        "matcher_ok": true,
+        "why": "Just over five years old, so too old for a Start Up Loan, and a sole trader, so not Funding Circle. Hire purchase fits."
+      },
+      {
+        "case": "N15",
+        "gold": "iwoca_flexi",
+        "acceptable": [
+          "iwoca_flexi",
+          null
+        ],
+        "matcher": "iwoca_flexi",
+        "cheapest": "iwoca_flexi",
+        "matcher_ok": true,
+        "why": "Cash needed tomorrow, no existing bank product, no tax bill. iwoca is costly but the only fast option, and affordable."
+      }
+    ]
+  }
+}
