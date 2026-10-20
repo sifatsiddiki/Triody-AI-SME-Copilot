@@ -82,19 +82,6 @@ On Windows, type `python` instead of `python3`.
 
 Shops: A is the Edinburgh café (default), B a bike shop, C a florist, D a Shenzhen tea shop on the China catalogue. In the browser build add `?shop=d` to the address for shop D.
 
-## Language-model agent
-
-By default a rule-based planner answers. To let a language model plan the tool calls and write the replies, set environment variables before `serve`, `demo` or `check`:
-
-```
-ANTHROPIC_API_KEY=...                         use Anthropic's API
-TRIODY_LLM_PROVIDER=openai                    or any OpenAI-compatible server
-TRIODY_LLM_BASE_URL=http://localhost:11434/v1 for example Ollama on this computer
-TRIODY_LLM_MODEL=qwen2.5:7b                   model name
-```
-
-The model passes the same permission gate as the rules, never sees memo text or approval codes, and any figure it writes that no tool returned gets its wording replaced. If the model cannot be reached, the rules answer and the reply says so. `python3 -m triody llm-check` runs the demo plus attack prompts against the model and saves the transcript in `evidence/`. The browser build never uses a model, because a key in a public page would be readable.
-
 ## Your own data
 
 Each shop folder in `data/` holds four files:
