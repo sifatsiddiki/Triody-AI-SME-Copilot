@@ -6,7 +6,7 @@ Team Triody AI, Edinburgh Napier University: AL SIFAT SIDDIKI (team leader), Md 
 
 | What | Where |
 |---|---|
-| Demo video | [paste video link here] |
+| Demo video | [Watch on Google Drive](https://drive.google.com/file/d/1j16apMrvM43rTCpFaGw-yDIX3qzL4e3i/view?usp=sharing) |
 | Technical documentation | [docs/Triody_AI_Technical_Documentation.pdf](docs/Triody_AI_Technical_Documentation.pdf) |
 | Security self-assessment | [docs/SECURITY_ASSESSMENT.md](docs/SECURITY_ASSESSMENT.md) |
 | Evaluation results | [docs/EVALUATION.md](docs/EVALUATION.md) |
